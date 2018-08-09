@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { AppService } from '../app.service';
 @Component({
   selector: 'app-profile',
@@ -8,6 +8,7 @@ import { AppService } from '../app.service';
 export class ProfileComponent implements OnInit {
   targetUser:any;
   decks:any;
+
   constructor(
     private _appService:AppService
   ) { }
@@ -16,6 +17,7 @@ export class ProfileComponent implements OnInit {
     this.getAllDecks();
   }
 
+  
   getAllDecks(){
     this.targetUser = this._appService.user;
     console.log(this._appService.user)
@@ -28,7 +30,7 @@ export class ProfileComponent implements OnInit {
   deleteDeck(deck){
     this.targetUser = this._appService.user;
     this._appService.deleteDeck(this.targetUser, deck._id).subscribe((data)=>{
-      console.log(data);
+      this.getAllDecks();
     })
   }
 }

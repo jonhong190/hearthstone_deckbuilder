@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col" *ngFor="let deck of decks">
       <div class="card text-white bg-dark mb-3" style="max-width:40rem">
-        <div class="card-header">{{deck.class}} <button id="deleteButton" type="button" class="btn btn-secondary" (click)="deleteDeck(deck)">Delete</button></div>
+        <div class="card-header">{{deck.class}} <button id="deleteButton" type="button" class="btn btn-secondary" (click)="deleteDeck(deck)" >Delete</button></div>
           <div class="card-body">
             <h5 class="card-title">{{deck.title}}</h5>
             <ul class="list-group">

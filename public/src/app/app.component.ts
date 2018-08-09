@@ -22,7 +22,7 @@ export class AppComponent {
     private _route:ActivatedRoute,
     private _router:Router
   ){
-
+    
   }
   ngOnInIt(){
     this.getUser()
@@ -32,7 +32,8 @@ export class AppComponent {
 
   }
   getUser(){
-    this.user = this._appService.user
+    this.user = this._appService.user;
+    console.log("in get user");
   }
   profile(){
     this.user = this._appService.user;
