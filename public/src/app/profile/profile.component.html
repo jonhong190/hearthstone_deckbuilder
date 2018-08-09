@@ -1,0 +1,26 @@
+
+<div class="container">
+  <h1>{{ targetUser.first_name }}'s Decks</h1>
+  <div class="row">
+    <div class="col" *ngFor="let deck of decks">
+      <div class="card text-white bg-dark mb-3" style="max-width:40rem">
+        <div class="card-header">{{deck.class}} <button id="deleteButton" type="button" class="btn btn-secondary" (click)="deleteDeck(deck)">Delete</button></div>
+          <div class="card-body">
+            <h5 class="card-title">{{deck.title}}</h5>
+            <ul class="list-group">
+              <span *ngFor="let card of deck.cards">
+                <li class="list-group-item">
+                  <p class="card-text">{{card.card_name }}</p>
+                  <span class="badge-badge-light" >
+                      <div class="img_contain">
+                      <img src="{{card.card_image}}">
+                      </div>
+                  </span>
+                </li>
+              </span>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

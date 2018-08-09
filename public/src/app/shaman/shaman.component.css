@@ -1,0 +1,89 @@
+
+#deck_row{
+        overflow-y: scroll;
+    height: 60rem;
+    padding-left: 20px;
+}
+#deck_wrap{
+    height: 90%;
+    width: 100%;
+    padding-right: 0px;
+    color: white;
+    overflow: hidden;
+
+}
+#deck_wrap_contain{
+    overflow-y: scroll;
+    /* overflow-x: scroll; */
+    /* width: 100%; */
+    /* padding-right: 21px; */
+    /* height: 100%; */
+    /* box-sizing: content-box; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -10px;
+}
+#deck_holder{
+    height: 30rem;
+    overflow-wrap: normal;
+    background-color: #545B66;
+    width: 50rem;
+    padding-top: 1%;
+    border-radius: 7px;
+    border: #545B66 solid 2px;
+    margin-left: 0px;
+}
+#graph{
+    height: 20rem;
+    background-color:whitesmoke;
+    color:black;
+    position: relative;
+    top:8px;
+    left:-12px;
+    border-radius:7px;
+
+}
+.col-sm{
+    max-width:5% !important;
+}
+.row{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#card_wrap{
+    background-color:#212529;
+}
+#page_wrap{
+    background-color:#212529;
+}
+.progress{
+    margin-bottom:.25rem;
+    background-color:#21252942 !important;
+}
+#graph h3{
+    border-bottom:solid darkslategray 1px;
+}
+#user_deck{
+        padding: 12px;
+    background-color: whitesmoke;
+    border-radius: 17px;
+    height:53rem;
+    max-width:58%;
+}
+#cardCount{
+        color: white;
+    position: absolute;
+    background-color: #212529;
+    width: 4.2rem;
+    height: 5rem;
+    top: -2.4%;
+    border-radius: 7px 0px 0px 0px;
+   padding-left:10px;
+}
+#cardCountContain{
+        position: relative;
+    padding-left: 0px !important;
+    
+}

@@ -1,0 +1,33 @@
+.list-group-item{
+    background-color:#212529;
+    position: relative;
+}
+.list-group-item p{
+    display:inline-block;
+    width:70%;
+}
+.img_contain{
+    display: inline-block;
+    width: 40%;
+    height: 95%;
+    overflow: hidden;
+    position: absolute;
+    top:0px;
+    text-align:right;
+}
+.img_contain img{
+    width: 10rem;
+    top: -65%;
+    position: absolute;
+    right: 11%;
+}
+.container{
+    background-color:#212529;
+    width:100%;
+    max-width:100%;
+    color:white;
+}
+#deleteButton{
+    text-align:right;
+    display:inline-block;
+}

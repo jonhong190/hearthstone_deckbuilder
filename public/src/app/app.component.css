@@ -1,0 +1,27 @@
+#main_nav{
+    width: 100vw;
+    
+}
+.navbar-nav li{
+    display:inline-block;
+}
+.menu_options{
+    background-color:whitesmoke
+}
+#main_wrapper{
+
+}
+#navback{
+    background:url("http://www.hearthstonely.com/wp-content/uploads/2015/07/Classes-1.png");
+    background-size:cover;
+    background-position-y:-15px;
+    color:white;
+}   
+#bottom_nav_cover{
+    height: 40%;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 174px;
+
+}

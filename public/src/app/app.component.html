@@ -1,0 +1,44 @@
+
+
+<div id="main_wrapper">
+    <div id="main_nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navback">
+            <div class="col" style="text-align:center">
+            <img src="https://gear.blizzard.com/media/wysiwyg/default/logos/hs-logo-white-nds.png" width="500" >
+            <p style="font-size:75px; position:relative; top:10px; left:3px;">DeckBuilder</p>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav">
+                <div class="btn-group-toggle btn-group" data-toggle="buttons">
+                    <label class="btn btn-secondary active menu_options">
+                        <li class="nav-item active">
+                            <input type="radio"  name="options" id="option1" checked autocomplete="off" checked><a class="nav-link" [routerLink]="['/home']" >Home</a>
+                        </li>
+                    </label>
+                    <label class="btn btn-secondary menu_options">
+                        <li class="nav-item active">
+                            <input type="radio"  name="options" id="option2" checked autocomplete="off">
+                            <a  class="nav-link" (click)="profile()" >Profile</a>
+                        </li>
+                    </label>
+                    <label class="btn btn-secondary menu_options">
+                        <li class="nav-item active">
+                            <input type="radio"  name="options" id="option3" checked autocomplete="off">
+                            <a class="nav-link" [routerLink]="['/classes']">Build Standard</a>
+                        </li>
+                    </label>
+                    <!-- <label class="btn btn-secondary menu_options">
+                        <li class="nav-item active">
+                            <input type="radio"  name="options" id="option4" checked autocomplete="off">
+                            <a class="nav-link" [routerLink]="['/wild/classes']">Build Wild</a>
+                        </li>
+                    </label> -->
+                
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+<router-outlet></router-outlet>
+</div>

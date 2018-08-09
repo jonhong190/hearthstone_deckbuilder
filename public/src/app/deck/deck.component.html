@@ -1,0 +1,28 @@
+<div clas="row" id="formcontain">
+  <form class="postForm" (submit)="postDeck(newDeck)">
+      <div class="col" style="position: relative;"  >
+        <input type="text" placeholder="Enter a deck title!" style="width: 256px; " name="newDeck.title" [(ngModel)]="newDeck.title">
+        <button type="submit" id="saveDeck" value="submit" class="btn btn-primary btn-lg btn-block">Save Deck</button>
+      </div>
+  </form>
+    <div id="deckList_contain" class="row" style="position:relative">
+        <div id="deckList_wrapper">
+            <ul class="list-group" >
+            <span *ngFor="let card of addCard" class="listItemContain">
+              <li class="list-group-item" >
+                <div class=" deckCol" id="cardText">
+                  {{ card.name }}
+                </div>
+                <div class=" deckCol" id="iconImg">
+                  <span id="image_contain" class="badge badge-light">
+                    <img src="{{card.img}}">
+                  </span>
+                </div>
+              </li>
+            </span>
+            </ul>
+        </div>
+      </div>
+
+      
+</div>

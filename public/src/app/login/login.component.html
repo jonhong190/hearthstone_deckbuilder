@@ -1,0 +1,34 @@
+
+<div class="container">
+  <div class="row" id="button_toggles">
+
+          <a class="btn btn-primary" role="button" [routerLink]="['/home']">Register</a>
+
+          <a class="btn btn-primary" role="button" [routerLink]="['/login']">Login</a>
+
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <div id="loginForm" class="collapseTarget">
+            <div class="card text-white bg-dark mb-3" id="loginCard" style="max-width:30rem">
+              <div class="card-header">
+                <h1>Login</h1>
+              </div>
+              <div class="card-body">
+                <form (submit)="loginUser(logUser)" class="postForm">
+                  <label for="email" style="margin-right:30px">Email:</label>
+                  <input type="text" name="email" [(ngModel)]="logUser.email">
+                  <br>
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" [(ngModel)]="logUser.password">
+                  <br>
+                  <button type="submit" value="submit" class="btn btn-primary">Login</button>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

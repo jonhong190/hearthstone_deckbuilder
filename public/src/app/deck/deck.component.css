@@ -1,0 +1,106 @@
+ #deckList_wrapper{
+height: 350px;
+    -webkit-column-fill: auto;
+    column-fill: auto;
+    -webkit-column-width: 170px;
+    column-width: 170px;
+    font-size: 12px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+    width: 37vw;
+    left: 0px;
+ 
+
+
+ }   
+ .list-group{
+    position:relative;
+    top:15px;
+    height:350px;
+
+ }
+ #formcontain{
+
+    padding-bottom: 1%;
+    width: 45.8rem;
+    height: 3rem;
+    position: absolute;
+    left: 24px;
+    top: -.7rem;
+    border-radius: 0px 7px 0px 0px;
+    height: 5rem;
+    background-color: #212529;
+    padding-top: 2%;
+    padding-left:10%;
+ }
+ form{
+         background-color: #212529;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+ }
+ form input{
+     display:inline-block;
+     margin-right:20px;
+     padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    vertical-align:top;
+ }
+ form button{
+     display:inline-block;
+ }
+    
+#saveDeck{
+    top: 650px;
+    width: 336px;
+}
+#image_contain{
+    overflow: hidden;
+    height: 31px;
+    position: relative;
+    width: 34px;
+    border-radius: 100px/50px;
+    border: solid 1px;
+    offset-rotate: 90;
+    transform: rotateY(40deg);
+    background-color: white;
+
+}
+.listItemContain{
+    width:170px;
+}
+#image_contain img{
+    width: 63px;
+    position: absolute;
+    left:-15px;
+    top:-21px;
+}
+.list-group-item{
+    padding:10px !important;
+    width:100%;
+
+}
+.deckCol{
+    padding-right:0;
+    display: inline-block;
+}
+#iconImg{
+    text-align:right;
+    width:30%;
+    max-width: 30%;
+}
+#cardText{
+    width:70%;
+    max-width:70%;
+    position: relative;
+    top:-10px;
+}
+.badge-light{
+    background-color:rgba(255,255,255,0)
+}
+#deckList_contain{
+ position: absolute;
+    left: -6rem;
+    top: 1rem;   
+}

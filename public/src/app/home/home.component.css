@@ -1,0 +1,22 @@
+.container{
+    background-color:whitesmoke;
+    width:100%;
+    max-width:100%;
+
+    text-align:center;
+}
+#buttonToggles{
+    padding-top: 2%;
+    display:inline-block;
+    text-align:left;
+}
+.row{
+    text-align:center;
+}
+#regCard{
+    display:inline-block;
+    max-width:30rem;
+    height:20rem;
+    width:30rem;
+    text-align:left;
+}

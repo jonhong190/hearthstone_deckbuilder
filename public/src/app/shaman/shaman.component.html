@@ -1,0 +1,71 @@
+
+<div id="page_wrap">
+<div id="card_wrap">
+
+  <div class="row" style="width:50%">
+    <div class="col" style="text-align:center">
+      <button type="button" class="btn btn-primary active" (click)="getShaman()">Class Cards</button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-secondary" (click)="getNeutral()">Neutral Cards</button>
+    </div>
+  </div>
+</div>
+<div class="row" id="deck_row"> 
+  
+    <div id="deck_wrap" class="col-5">
+      <div id="deck_wrap_contain" class="row">
+      <app-standard *ngIf="cards" [showCards]="cards" (sendCard)="getCard($event)"></app-standard>
+      <app-neutral *ngIf="neutralCards" [showNeutral]="neutralCards" (sendCard)="getCard($event)"></app-neutral>
+    </div>
+  </div>
+  <div id="user_deck" class="col">
+    <div class="row" id="deck_holder">
+      <div id="cardCountContain" class="col-sm">
+        <p id="cardCount">{{ copyDeckList.length }}/30 cards</p>
+      </div>
+      <div class="col-lg-11">
+        <app-deck [addCard]="formatList" [class]="sendClass"></app-deck>
+      </div> 
+    </div>
+
+      <br>
+      <div id="graph" class="col-7" style="position: relative; top:8px">
+        <h3><strong>Mana Curve:</strong></h3>
+          <p>Average Cost: {{ avgCost }}</p>
+        <div class="progress" >
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[0]" [style.width]="(cardCostArray[0]/30 * 100).toString() + '%'">{{cardCostArray[0]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[1]"
+            [style.width]="(cardCostArray[1]/30 * 100).toString() + '%'">{{cardCostArray[1]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[2]"
+            [style.width]="(cardCostArray[2]/30 * 100).toString() + '%'">{{cardCostArray[2]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[3]"
+            [style.width]="(cardCostArray[3]/30 * 100).toString() + '%'">{{cardCostArray[3]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[4]"
+            [style.width]="(cardCostArray[4]/30 * 100).toString() + '%'">{{cardCostArray[4]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[5]"
+            [style.width]="(cardCostArray[5]/30 * 100).toString() + '%'">{{cardCostArray[5]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[6]"
+            [style.width]="(cardCostArray[6]/30 * 100).toString() + '%'">{{cardCostArray[6]}}</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="30" [attr.aria-valuenow]="cardCostArray[7]"
+            [style.width]="(cardCostArray[7]/30 * 100).toString() + '%'">{{cardCostArray[7]}}</div>
+        </div>
+
+      </div>
+    </div>
+</div>
+</div>
