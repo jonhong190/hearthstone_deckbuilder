@@ -30,7 +30,7 @@ export class AppService {
   getNeutralCards(){
     return this._http.get('/neutral');
   }
-
+ki,mq
   getOneCard(name){
     return this._http.get('/card/'+name);
   }
